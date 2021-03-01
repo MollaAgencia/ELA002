@@ -1,0 +1,189 @@
+/* Add here all your CSS customizations */
+
+/* --- global --- */
+	:root{
+		--blue-dark:#006c97!important;
+		--blue-light:#00bff3!important;
+		--green:#a6ce38!important;
+		--yellow:#fad500!important;
+		--red-dark :#c51f3e!important;
+		--gray-dark:#53565a!important;
+	}
+	html .btn-outline.btn-primary{
+		color: #fff;
+	    background-color: transparent;
+	    background-image: none;
+	    border-color: #fff;
+	}
+	html .btn-outline.btn-primary:hover,
+	html .btn-outline.btn-primary.hover,
+	html .btn-outline.btn-primary:active,
+	html .btn-outline.btn-primary.active {
+	    color: var(--primary)!important;
+	    background-color: #fff!important;
+	    border-color: #fff!important;
+	}
+	body{
+		padding-right: 0px!important;
+		padding-left: 0px!important;
+	}
+	a{
+		text-decoration: none!important;
+	}
+	.bg-cinzadark{
+		background-color: var(--gray-dark)!important;
+	}
+	.bg-redDark{
+		background-color: var(--red-dark)!important;
+	}
+	.bg-yellow{
+		background-color: var(--yellow)!important;
+	}
+	.bg-blue-dark{
+		background-color: var(--blue-dark)!important;
+	}
+	.bg-blue-light{
+		background-color: var(--blue-light)!important;
+	}
+	.bg-green{
+		background-color: var(--green)!important;
+	}
+	.text-blue-dark{
+		color: var(--gray-dark)!important;
+	}
+	.text-blue-light{
+		color: var(--blue-light)!important;
+	}
+	.text-green{
+		color: var(--green)!important;
+	}
+    .text-red-dark{
+    	color:var(--red-dark)!important;
+    }
+
+	#modal_verNF img{
+		max-width: 300px;
+	}
+
+/* --- aviso Cookie --- */
+	#aviso-cookie{
+		position: fixed;
+		bottom: 10px;
+		left: 10%;
+		right: 10%;
+		z-index: 1000;
+		background-color: var(--white)
+	}
+	
+/* --- header --- */
+	header .row i{
+		font-size: 15px!important;
+	}
+	header .topo a{
+		text-decoration: none;
+	}
+	header .header-container.header-container-height-sm{
+		max-height: 80px;
+	}
+	header .header-logo a{
+		text-decoration: none;
+	}
+
+	header .header-logo img{
+		max-width: 200px;
+	}
+	header{
+		max-height: 125px;
+	}
+
+/* --- footer --- */
+	footer .container-fluid img{
+		max-width: 80px;
+	}
+
+/* --- PAGE HOME --- */
+/* --- banner --- */
+	.carousel-inner img{
+		min-height: 550px;
+		object-fit: cover;
+	}
+
+/* --- --- */
+	.featured-box-primary .box-content{
+		
+		border-top-color: var(--red-dark)!important;
+	}
+	.featured-box{
+		height: 100%;	
+		min-height: 180px;
+		max-height: 180px;
+	}
+
+@media screen and (max-width: 1024px) {
+	/* --- header ---- */
+		header .header-logo img{
+			max-width: 170px;
+		}
+}
+
+@media screen and (max-width: 768px) {
+	/* --- header ---- */
+		header .header-logo img{
+			max-width: 170px;
+		}
+		
+	/* --- banner --- */
+		#banner img{
+			min-height: 400px;
+			object-fit: cover;
+		}
+}
+
+@media screen and (max-width: 425px) {
+	/* --- header ---- */
+		header{
+			max-height: 120px;
+		}
+		header .header-logo img{
+			max-width: 170px;
+		}
+	/* --- banner --- */
+		#banner img{
+			min-height: 230px;
+			object-fit: cover;
+		}
+
+	/* --- home --- */
+		.featured-box{
+			height: 100%;	
+			min-height: 150px;
+			max-height: 150px;
+		}
+
+	/* --- footer --- */
+		footer .container-fluid img{
+			max-width: 60px;
+		}
+}
+
+@media screen and (max-width: 320px) {
+	/* --- login --- */
+		/*#body-login .container img:first-child{
+			max-width: 80%;
+		}
+		#body-login .container img:nth-child(2){
+			max-width: 68%;
+		}
+		#body-login .container img:nth-child(3){
+			max-width: 35%;
+		}*/
+
+	/* --- PAGE HOME ---*/
+	/* --- header ---- */
+		header .header-logo img{
+			max-width: 120px;
+		}
+		header .topo a{
+			font-size: 11px!important;
+		}
+}
